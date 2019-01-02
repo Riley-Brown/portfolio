@@ -1,5 +1,7 @@
 // scroll reveal animations
-window.sr = ScrollReveal({ mobile: false });
+window.sr = ScrollReveal({
+  mobile: false
+});
 
 sr.reveal(".html-container", {
   origin: "left",
@@ -137,7 +139,7 @@ sr.reveal(".lightbox-container span", {
 // tree house api data
 
 function loadJSON() {
-  $.getJSON("https://teamtreehouse.com/rileybrown3.json", function(
+  $.getJSON("https://teamtreehouse.com/rileybrown3.json", function (
     data,
     status
   ) {
@@ -246,7 +248,7 @@ sr.reveal(".my-work-wrapper", {
 
 // script to close mobile menu after click
 
-$(".navbar-collapse a").click(function(e) {
+$(".navbar-collapse a").click(function (e) {
   if (
     $(e.target).is("a") &&
     window.innerWidth < 767 &&
@@ -259,7 +261,7 @@ $(".navbar-collapse a").click(function(e) {
 // custom image modal
 // modal one
 function modalClickOne() {
-  $(".lightbox-container .span-1").on("click", function() {
+  $(".lightbox-container .span-1").on("click", function () {
     $(".image-modal").fadeIn();
     document.querySelector(".image-modal img").src = imgs[4];
     // set description
@@ -276,7 +278,7 @@ modalClickOne();
 // modal 2
 
 function modalClickTwo() {
-  $(".lightbox-container .span-2").on("click", function() {
+  $(".lightbox-container .span-2").on("click", function () {
     $(".image-modal").fadeIn();
     document.querySelector(".image-modal img").src = imgs[1];
     // set description
@@ -295,7 +297,7 @@ modalClickTwo();
 
 // modal 3
 function modalClickThree() {
-  $(".lightbox-container .span-3").on("click", function() {
+  $(".lightbox-container .span-3").on("click", function () {
     $(".image-modal").fadeIn();
     document.querySelector(".image-modal img").src = imgs[2];
     // set description
@@ -314,7 +316,7 @@ modalClickThree();
 
 // modal 4
 function modalClickFour() {
-  $(".lightbox-container .span-4").on("click", function() {
+  $(".lightbox-container .span-4").on("click", function () {
     $(".image-modal").fadeIn();
     document.querySelector(".image-modal img").src = imgs[3];
     // set description
@@ -331,7 +333,7 @@ function modalClickFour() {
 modalClickFour();
 
 function modalClickFive() {
-  $(".lightbox-container .span-5").on("click", function() {
+  $(".lightbox-container .span-5").on("click", function () {
     // fade modal in
     $(".image-modal").fadeIn();
     // set image src
@@ -351,7 +353,7 @@ function modalClickFive() {
 modalClickFive();
 
 function modalClickSix() {
-  $(".lightbox-container .span-6").on("click", function() {
+  $(".lightbox-container .span-6").on("click", function () {
     $(".image-modal").fadeIn();
     document.querySelector(".image-modal img").src = imgs[5];
     // set description
@@ -369,7 +371,7 @@ modalClickSix();
 
 // close modal
 function modalClose() {
-  $(".image-modal span").on("click", function() {
+  $(".image-modal span").on("click", function () {
     $(".image-modal").fadeOut();
   });
 }
@@ -377,7 +379,7 @@ function modalClose() {
 modalClose();
 
 function modalCloseTwo() {
-  $(".image-modal img").on("click", function() {
+  $(".image-modal img").on("click", function () {
     $(".image-modal").fadeOut();
   });
 }
@@ -405,3 +407,32 @@ var imgs = [
 //     .get(0)
 //     .pause();
 // }
+
+
+// github api repos
+const reposDiv = document.querySelector('.github-repos');
+let repos;
+
+$.get('https://github-rest-api.herokuapp.com/', function (data) {
+
+  // console.log(JSON.parse(data))
+  data = JSON.parse(data)
+  console.log(data)
+  repos = `
+ ${data.map(repo => `
+ 
+
+  <div class="col-sm-6"> 
+    <a href=${repo.html_url} class="card" target="_blank">
+    <h2> ${repo.name} </h2>
+    ${repo.description ? `<p>${repo.description}</p>` : "No description provided for this repo." } 
+    </a>
+  </div>
+ 
+ 
+ `).join('')}
+ 
+  `
+  reposDiv.innerHTML = repos
+  console.log(repos)
+})

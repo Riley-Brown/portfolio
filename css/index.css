@@ -251,6 +251,12 @@ header.fullscreen-landing {
   color: #34b3a0;
   margin-bottom: 2rem;
 }
+.design-line {
+  border: none;
+  border-bottom: 3px solid #222;
+  width: 70px;
+  margin: 20px auto;
+}
 .about-me {
   text-align: center;
   color: white;
@@ -318,6 +324,30 @@ header.fullscreen-landing {
 #contactForm {
   width: 95%;
   max-width: 800px;
+  margin: 0 auto;
+}
+.github {
+  margin-top: 100px;
+}
+.github h1 {
+  text-align: center;
+  margin-bottom: 0px;
+  color: #34b3a0;
+}
+.github .design-line {
+  margin-bottom: 50px;
+}
+.github .github-repos {
+  text-align: center;
+}
+.github .github-repos a {
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #222;
+}
+.github .github-repos p {
+  max-width: 250px;
   margin: 0 auto;
 }
 .car-img {

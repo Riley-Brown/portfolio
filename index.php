@@ -82,8 +82,8 @@
 
   <div class="container container-skills">
     <h1 class="my-skills" id="skills">
-      <hr class="my-work-hr">My Skills
-      <hr class="my-work-hr">
+      My Skills
+      <hr class="design-line">
     </h1>
   </div>
 
@@ -102,7 +102,7 @@
         <div class="card text-center css-container">
           <div class="card-body">
             <h5 class="card-title ">React.js</h5>
-            <img src="svg/react.svg">    
+            <img src="svg/react.svg">
           </div>
         </div>
       </div>
@@ -134,7 +134,7 @@
         <div class="card text-center jquery-container">
           <div class="card-body ">
             <h5 class="card-title">CSS3</h5>
-            <i class="fab fa-css3 code-icon css3-icon"></i>   
+            <i class="fab fa-css3 code-icon css3-icon"></i>
           </div>
         </div>
       </div>
@@ -162,13 +162,15 @@
 
 
               <div class="form-group">
-                <textarea class="form-control" type="textarea" id="message" name="message" placeholder="Message" maxlength="140" rows="7"></textarea>
+                <textarea class="form-control" type="textarea" id="message" name="message" placeholder="Message"
+                  maxlength="140" rows="7"></textarea>
                 <span class="help-block">
 
                 </span>
               </div>
 
-              <button type="submit" id="submit" name="submit" class="btn btn-lg btn-block  pull-right form-button mb-5">Submit Form</button>
+              <button type="submit" id="submit" name="submit" class="btn btn-lg btn-block  pull-right form-button mb-5">Submit
+                Form</button>
             </form>
           </div>
 
@@ -177,18 +179,23 @@
         <div class="col-lg-6">
           <div class=" about-me mt-4" id="about">
             <h3>About Me</h3>
-            <p class="mt-3">I am a 22 year old Web Developer from Boston, Massachusetts. I have had an interest in technology since a young
+            <p class="mt-3">I am a 22 year old Web Developer from Boston, Massachusetts. I have had an interest in
+              technology since a young
               age, and decided to teach myself how to code. </p>
 
             <p>I started with HTML on
-              <a href="https://www.codecademy.com/catalog/subject/web-development" target="_blank">CodeCademy</a>, then CSS and JavaScript. I moved on to
-              <a href="http://referrals.trhou.se/rileybrown3" target="_blank">TeamTreeHouse's</a> 60 hour front-end development course learning valuable skills such as Bootstrap, VueJS,
+              <a href="https://www.codecademy.com/catalog/subject/web-development" target="_blank">CodeCademy</a>, then
+              CSS and JavaScript. I moved on to
+              <a href="http://referrals.trhou.se/rileybrown3" target="_blank">TeamTreeHouse's</a> 60 hour front-end
+              development course learning valuable skills such as Bootstrap, VueJS,
               jQuery, AJAX and more. I learn new skills everyday from various platforms such as
               <a href="https://udemy.com" target="_blank">Udemy.com</a>, YouTube, and more.
-              <a href="https://teamtreehouse.com/rileybrown3" target="_blank"> Click here to see my progress on TreeHouse.</a>
+              <a href="https://teamtreehouse.com/rileybrown3" target="_blank"> Click here to see my progress on
+                TreeHouse.</a>
             </p>
             <p class="mb-5"> I am currently attending
-              <a href="https://lambdaschool.com/" target="_blank">Lambda School's</a> 30 week coding Bootcamp for full-stack Web Development. We will learn many new skills such
+              <a href="https://lambdaschool.com/" target="_blank">Lambda School's</a> 30 week coding Bootcamp for
+              full-stack Web Development. We will learn many new skills such
               as full-stack JavaScript, Python, C, and Computer Science fundamentals.
 
             </p>
@@ -206,13 +213,13 @@
     <!-- testimon carousel start  -->
     <div class="testimonial-wrapper">
       <div id="testimonial" class="carousel slide carousel-fade" data-ride="carousel">
-          <!-- indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#testimonial" data-slide-to="0" class="active"></li>
-            <li data-target="#testimonial" data-slide-to="1"></li>
-            <li data-target="#testimonial" data-slide-to="2"></li>
-            <li data-target="#testimonial" data-slide-to="3"></li>
-          </ol>
+        <!-- indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#testimonial" data-slide-to="0" class="active"></li>
+          <li data-target="#testimonial" data-slide-to="1"></li>
+          <li data-target="#testimonial" data-slide-to="2"></li>
+          <li data-target="#testimonial" data-slide-to="3"></li>
+        </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
             <h1>Build personal website</h1>
@@ -225,7 +232,8 @@
             </div>
             <p>
               <i class="fa fa-quote-left" aria-hidden="true"></i>
-              Great experience overall working with Riley. Very professional and quality of work exceeded my expectation. Will surely use
+              Great experience overall working with Riley. Very professional and quality of work exceeded my
+              expectation. Will surely use
               again.
             </p>
           </div>
@@ -254,7 +262,8 @@
             </div>
             <p>
               <i class="fa fa-quote-left" aria-hidden="true"></i>
-              Riley was easy to work with, had great communication skills, and excelled at thinking of creative solutions to coding problems
+              Riley was easy to work with, had great communication skills, and excelled at thinking of creative
+              solutions to coding problems
               that ensured the finished product was perfect.
             </p>
           </div>
@@ -310,7 +319,7 @@
         </div>
         <div class="col-md-6 col-lg-4">
           <span class="span-2 ">
-          <img data-src="img/insta-clone.png" class="lazyload" />  
+            <img data-src="img/insta-clone.png" class="lazyload" />
           </span>
         </div>
         <div class="col-md-6 col-lg-4">
@@ -321,12 +330,12 @@
         <div class="col-md-6 col-lg-4">
           <span class="span-4 video">
             <!-- <img data-src="img/wb-flashback.jpg" class="lazyload" alt="WB Flashback"> -->
-            <img data-src="img/wb-flashback.jpg" class="lazyload"/>  
+            <img data-src="img/wb-flashback.jpg" class="lazyload" />
           </span>
         </div>
         <div class="col-md-6 col-lg-4">
           <span class="span-5 video">
-            <img data-src="img/bayshells-landing.jpg" class="lazyload" alt="Bay Shells" />  
+            <img data-src="img/bayshells-landing.jpg" class="lazyload" alt="Bay Shells" />
           </span>
         </div>
         <div class="col-md-6 col-lg-4">
@@ -338,6 +347,20 @@
 
     </div>
   </div>
+
+  <!-- github repos -->
+  <div class="github">
+    <h1>My Latest Repos</h1>
+    <hr class="design-line">
+    <div class="container">
+      <div class="row github-repos">
+
+      </div>
+    </div>
+  </div>
+
+
+
 
   <!-- treehouse API -->
   <div class="treehouse-info">
@@ -413,17 +436,15 @@
   <script src="js/ls.bgset.min.js"></script>
   <script src="js/lazysizes.min.js"></script>
   <script src="js/smoothScroll.js"></script>
-  <script src="js/main.min.js"></script>
+  <script src="js/main.js"></script>
 
   <script language="javascript" type="text/javascript">
     $(window).on('load', function () {
       $('.fullscreen-spinner').fadeOut();
 
     });
-
-
-
   </script>
 </body>
 
 </html>
+<img src="" alt="">
