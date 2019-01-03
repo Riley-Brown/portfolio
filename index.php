@@ -350,7 +350,9 @@
 
   <!-- github repos -->
   <div class="github">
-    <h1>My Latest Repos</h1>
+    <a href="https://github.com/Riley-Brown" target="_blank">
+      <h1>My Latest Repos</h1>
+    </a>
     <hr class="design-line">
     <div class="container">
       <div class="row github-repos">

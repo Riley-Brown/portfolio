@@ -329,7 +329,10 @@ header.fullscreen-landing {
 .github {
   margin-top: 100px;
 }
-.github h1 {
+.github a {
+  text-decoration: none;
+}
+.github a h1 {
   text-align: center;
   margin-bottom: 0px;
   color: #34b3a0;
