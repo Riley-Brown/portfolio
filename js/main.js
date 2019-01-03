@@ -415,7 +415,6 @@ let repos;
 $.get("https://github-rest-api.herokuapp.com/", function(data) {
   // console.log(JSON.parse(data))
   data = JSON.parse(data);
-  console.log(data);
   repos = `
  ${data
    .map(
@@ -449,5 +448,13 @@ $.get("https://github-rest-api.herokuapp.com/", function(data) {
  
   `;
   reposDiv.innerHTML = repos;
-  console.log(repos);
+
+  sr.reveal(".github-repos .card", {
+    origin: "left",
+    distance: "200px",
+    duration: 1000,
+    viewFactor: 0.3,
+    delay: 200,
+    interval: 200
+  });
 });
