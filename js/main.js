@@ -385,17 +385,15 @@ var imgs = [
 //     .get(0)
 //     .pause();
 // }
-window.addEventListener("DOMContentLoaded", function() {
-  // github api repos
-  const reposDiv = document.querySelector(".github-repos");
-  let repos;
 
-  $.get("https://supersystem-mailchimp-api.herokuapp.com/github", function(
-    data
-  ) {
-    // console.log(JSON.parse(data))
-    data = JSON.parse(data);
-    repos = `
+// github api repos
+const reposDiv = document.querySelector(".github-repos");
+let repos;
+
+$.get("https://supersystem-mailchimp-api.herokuapp.com/github", function(data) {
+  // console.log(JSON.parse(data))
+  data = JSON.parse(data);
+  repos = `
  ${data
    .map(
      repo => `
@@ -427,8 +425,7 @@ window.addEventListener("DOMContentLoaded", function() {
    .join("")}
  
   `;
-    reposDiv.innerHTML = repos;
-  });
+  reposDiv.innerHTML = repos;
 });
 
 window.addEventListener("load", function() {
