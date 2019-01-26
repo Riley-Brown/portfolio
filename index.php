@@ -441,10 +441,10 @@
   <script src="js/main.js"></script>
 
   <script language="javascript" type="text/javascript">
-    $(window).on('load', function () {
-      $('.fullscreen-spinner').fadeOut();
+  $(window).on('load', function() {
+    $('.fullscreen-spinner').fadeOut();
 
-    });
+  });
   </script>
 </body>
 
