@@ -7,11 +7,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Riley Brown Web Developer</title>
   <meta name="description" content="Riley Brown Web Development Porfolio">
-  <meta name="description" content="Riley Brown, Riley Brown Web Developer, Riley.gg, Web Development, Software Engineering">
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-    crossorigin="anonymous">
+  <meta name="description"
+    content="Riley Brown, Riley Brown Web Developer, Riley.gg, Web Development, Software Engineering">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" href="css/index.css">
 </head>
 
@@ -24,43 +25,45 @@
 
   <!-- nav bar start-->
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark pl-5 navbar-top-info">
-    <a class="navbar-brand" href="#">Riley Brown</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <i class="fas fa-bars"></i>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active"></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right pr-5">
-        <li class="nav-item">
-          <a class="nav-link" id="about-me" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="contact-me-nav" href="#contact-me">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link my-work-nav" href="#myWork">My Work
-            <span class="sr-only">(current)</span>
-          </a>
-        </li>
+    <div class="container">
+      <a class="navbar-brand" href="#">Riley Brown</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active"></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right pr-5">
+          <li class="nav-item">
+            <a class="nav-link" id="about-me" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="contact-me-nav" href="#contact-me">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link my-work-nav" href="#myWork">My Work
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="https://github.com/Riley-Brown" target="_blank">GitHub</a>
-
-
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://blog.riley.gg">Blog</a>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/Riley-Brown" target="_blank">GitHub</a>
 
 
-        </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.riley.gg">Blog</a>
 
 
-      </ul>
+          </li>
 
 
+        </ul>
+
+
+      </div>
     </div>
   </nav>
   <!-- nav bar end-->
@@ -169,7 +172,8 @@
                 </span>
               </div>
 
-              <button type="submit" id="submit" name="submit" class="btn btn-lg btn-block  pull-right form-button mb-5">Submit
+              <button type="submit" id="submit" name="submit"
+                class="btn btn-lg btn-block  pull-right form-button mb-5">Submit
                 Form</button>
             </form>
           </div>
@@ -432,8 +436,9 @@
   <!--scripts-->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js" integrity="sha384-lZmvU/TzxoIQIOD9yQDEpvxp6wEU32Fy0ckUgOH4EIlMOCdR823rg4+3gWRwnX1M"
-    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js"
+    integrity="sha384-lZmvU/TzxoIQIOD9yQDEpvxp6wEU32Fy0ckUgOH4EIlMOCdR823rg4+3gWRwnX1M" crossorigin="anonymous">
+  </script>
   <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   <script src="js/ls.bgset.min.js"></script>
   <script src="js/lazysizes.min.js"></script>
