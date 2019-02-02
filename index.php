@@ -20,7 +20,7 @@
   <div class="fullscreen-spinner">
 
     <img src="spinner.svg" alt="spinner logo">
-
+    
   </div>
 
   <!-- nav bar start-->
