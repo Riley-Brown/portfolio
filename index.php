@@ -20,7 +20,7 @@
   <div class="fullscreen-spinner">
 
     <img src="spinner.svg" alt="spinner logo">
-    
+
   </div>
 
   <!-- nav bar start-->
@@ -366,30 +366,23 @@
   </div>
 
 
-
-
   <!-- treehouse API -->
   <div class="treehouse-info">
     <h3 class="text-center  mt-5 treehouse-h3">My latest achievements on TreeHouse</h3>
-    <p class="text-center"> This data is dynamically generated using TeamTreeHouse's API and AJAX</p>
     <p class="text-center">
       <a href="https://teamtreehouse.com/rileybrown3" class="treehouse-link" target="_blank">See full profile</a>
     </p>
-
-    <hr class="treehouse-hr">
-
+    <hr class="design-line">
   </div>
 
   <div class="container-fluid treehouse-wrapper">
-    <div class="row  treehouse-api-container">
+    <div class="row treehouse-api-container">
       <div class="col-lg-3 col-md-6">
         <div class="card treehouse-card card-1">
           <img class="card-img-top treehouse-pic-1" src="svg/spinner.svg" alt="Card image cap">
           <div class="card-body">
-
             <h4 class="card-text text-center treehouse-1"></h4>
             <p class="treehouse-p-1 text-center"></p>
-
           </div>
         </div>
       </div>
@@ -399,7 +392,6 @@
           <div class="card-body">
             <h4 class="card-title treehouse-2 text-center"></h4>
             <p class="treehouse-p-2 text-center"></p>
-
           </div>
         </div>
       </div>
@@ -409,7 +401,6 @@
           <div class="card-body">
             <h4 class="card-title treehouse-3 text-center"></h4>
             <p class="treehouse-p-3 text-center"></p>
-
           </div>
         </div>
       </div>
@@ -419,7 +410,6 @@
           <div class="card-body">
             <h4 class="card-title treehouse-4 text-center"></h4>
             <p class="treehouse-p-4 text-center"></p>
-
           </div>
         </div>
       </div>
