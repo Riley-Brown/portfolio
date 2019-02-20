@@ -1,7 +1,6 @@
 .about-me {
   text-align: center;
   color: white;
-  /* padding: 0 !important; */
 }
 .about-container {
   max-width: 1600px;
@@ -15,6 +14,9 @@
 #contact-me {
   width: 100vw !important;
   padding: 50px 0;
+  @media (max-width: 525px) {
+    padding: 20px 0;
+  }
 }
 
 #about p {
@@ -24,8 +26,6 @@
   margin-right: auto;
   margin-left: auto;
   text-align: justify;
-  text-justify: inter-word;
-  padding-right: 20px;
   width: 95%;
   @media (max-width: 920px) {
     text-align: left;
@@ -54,9 +54,12 @@
   border: solid 1px green;
   border-radius: 7px;
   margin-bottom: 30px;
+  @media (max-width: 525px) {
+    margin-bottom: 10px;
+  }
 }
 .form-button {
-  margin-bottom: 15px;
+  margin-bottom: 15px !important;
 }
 #submit {
   background-color: #34b3a0;

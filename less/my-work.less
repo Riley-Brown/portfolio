@@ -26,6 +26,11 @@
 }
 
 /* treehouse api styles */
+.treehouse-info {
+  .design-line {
+    margin-bottom: 50px;
+  }
+}
 
 .treehouse-api-container img {
   width: 200px;
@@ -48,14 +53,14 @@
   margin-bottom: 15px;
 }
 
-.treehouse-hr {
-  width: 50%;
+// .treehouse-hr {
+//   width: 30%;
 
-  margin-bottom: 20px;
+//   margin-bottom: 20px;
 
-  border: none;
-  border-top: 1px solid grey;
-}
+//   border: none;
+//   border-top: 1px solid grey;
+// }
 .treehouse-h3 {
   color: #34b3a0;
 }
@@ -63,7 +68,13 @@
 .treehouse-link {
   text-decoration: none;
   font-weight: 700;
-  color: black;
+  color: #333;
+  opacity: 0.8;
+  &:hover {
+    opacity: 1;
+    color: #333;
+    text-decoration: none;
+  }
 }
 
 /* testimonial */
@@ -79,7 +90,7 @@
     margin-top: 50px;
   }
   @media (max-width: 600px) {
-    width: 100%;
+    width: 95%;
     margin: 50px auto;
     text-align: center;
     margin-top: 50px;
