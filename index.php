@@ -7,28 +7,28 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Riley Brown Web Developer</title>
   <meta name="description"
-    content="Riley Brown, Riley Brown Web Developer, Riley.gg, Web Development, Software Engineering">
+    content="Riley Brown FullStack web developer. Need a website made for you or your business? Contact me with the form below.">
 
   <!-- Google / Search Engine Tags -->
   <meta itemprop="name" content="Riley Brown Web Developer">
   <meta itemprop="description"
-    content="Riley Brown, Riley Brown Web Developer, Riley.gg, Web Development, Software Engineering">
-  <meta itemprop="image" content="https://i.imgur.com/XQYATlN.jpg">
+    content="Riley Brown FullStack web developer. Need a website made for you or your business? Contact me with the form below.">
+  <meta itemprop="image" content="img/seo-landing.jpg">
 
   <!-- Facebook Meta Tags -->
   <meta property="og:url" content="https://riley.gg">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Riley Brown Web Developer">
   <meta property="og:description"
-    content="Riley Brown, Riley Brown Web Developer, Riley.gg, Web Development, Software Engineering">
-  <meta property="og:image" content="https://i.imgur.com/XQYATlN.jpg">
+    content="Riley Brown FullStack web developer. Need a website made for you or your business? Contact me with the form below.">
+  <meta property="og:image" content="img/seo-landing.jpg">
 
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Riley Brown Web Developer">
   <meta name="twitter:description"
-    content="Riley Brown, Riley Brown Web Developer, Riley.gg, Web Development, Software Engineering">
-  <meta name="twitter:image" content="https://i.imgur.com/XQYATlN.jpg">
+    content="Riley Brown FullStack web developer. Need a website made for you or your business? Contact me with the form below.">
+  <meta name="twitter:image" content="img/seo-landing.jpg">
 
   <!-- style sheets -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet"
