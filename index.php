@@ -329,6 +329,7 @@
         <h1>This is my website</h1>
         <p>This is my great website that I build using cool things</p>
         <a href="#" target="_blank">Visit Site</a>
+        <a href="" class="code-link" target="_blank"></a>
       </div>
     </div>
     <!-- image modal end -->
@@ -348,7 +349,7 @@
         </div>
         <div class="col-md-6 col-lg-4">
           <span class="span-3">
-            <img data-src="img/video-mentum-landing.jpg" class="lazyload" alt="Video Mentum">
+            <img data-src="img/upwork-10-case-study.png" class="lazyload" alt="Video Mentum">
           </span>
         </div>
         <div class="col-md-6 col-lg-4">
@@ -464,4 +465,3 @@
 </body>
 
 </html>
-<img src="" alt="">
