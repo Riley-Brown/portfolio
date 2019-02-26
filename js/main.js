@@ -225,6 +225,13 @@ function modalClickOne() {
     document
       .querySelector('.image-modal a')
       .setAttribute('href', 'https://riley.gg/upwork-4/');
+
+    // set github link
+    document
+      .querySelector('.code-link')
+      .setAttribute('href', 'https://github.com/Riley-Brown/upwork-4');
+
+    document.querySelector('.code-link').innerHTML = 'View Code';
   });
 }
 modalClickOne();
@@ -297,6 +304,13 @@ function modalClickFour() {
     document
       .querySelector('.image-modal a')
       .setAttribute('href', 'https://riley.gg/upwork-3/');
+
+    // set github link
+    document
+      .querySelector('.code-link')
+      .setAttribute('href', 'https://github.com/Riley-Brown/upwork-3');
+
+    document.querySelector('.code-link').innerHTML = 'View Code';
   });
 }
 
