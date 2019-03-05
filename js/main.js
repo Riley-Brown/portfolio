@@ -214,7 +214,6 @@ $('.navbar-collapse a').click(function(e) {
 function modalClickOne() {
   $('.lightbox-container .span-1').on('click', function(e) {
     e.stopPropagation();
-
     $('.image-modal').fadeIn();
     document.querySelector('.image-modal img').src = imgs[4];
     // set description
@@ -398,20 +397,6 @@ var imgs = [
   'img/blargin-homes-landing.jpg'
 ];
 
-// play vid on hover
-// var figure = $(".video").hover(hoverVideo, hideVideo);
-
-// function hoverVideo(e) {
-//   $("video", this)
-//     .get(0)
-//     .play();
-// }
-// function hideVideo(e) {
-//   $("video", this)
-//     .get(0)
-//     .pause();
-// }
-
 // github api repos
 const reposDiv = document.querySelector('.github-repos');
 let repos;
@@ -424,7 +409,6 @@ $.get('https://supersystem-mailchimp-api.herokuapp.com/github', function(data) {
    .map(
      repo => `
  
-
   <div class="col-sm-6"> 
     <a href=${repo.html_url} class="card" target="_blank">
     <h2> ${repo.name} </h2>
@@ -485,4 +469,22 @@ window.addEventListener('load', function() {
     viewFactor: 0.3,
     delay: 2000
   });
+});
+
+let lastHeight;
+
+window.addEventListener('load', function() {
+  let landingImg = document.querySelector('header.fullscreen-landing');
+  landingImg.style.height = window.innerHeight + 'px';
+  lastHeight = window.innerHeight;
+});
+window.addEventListener('resize', function() {
+  if (
+    window.innerWidth > window.innerHeight ||
+    Math.abs(lastHeight - window.innerHeight) > 100
+  ) {
+    let landingImg = document.querySelector('header.fullscreen-landing');
+    landingImg.style.height = window.innerHeight + 'px';
+    lastHeight = window.innerHeight;
+  }
 });
