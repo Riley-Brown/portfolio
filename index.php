@@ -71,7 +71,7 @@
             <a class="nav-link" href="https://github.com/Riley-Brown" target="_blank">GitHub</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://blog.riley.gg">Blog</a>
+            <a class="nav-link" href="https://blog.riley.gg" target="_blank">Blog</a>
           </li>
         </ul>
 
