@@ -37,10 +37,9 @@
 </head>
 
 <body>
+
   <div class="fullscreen-spinner">
-
     <img src="spinner.svg" alt="spinner logo">
-
   </div>
 
   <!-- nav bar start-->
@@ -55,6 +54,7 @@
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active"></li>
         </ul>
+
         <ul class="nav navbar-nav navbar-right pr-5">
           <li class="nav-item">
             <a class="nav-link" id="about-me" href="#about">About</a>
@@ -67,21 +67,13 @@
               <span class="sr-only">(current)</span>
             </a>
           </li>
-
           <li class="nav-item">
             <a class="nav-link" href="https://github.com/Riley-Brown" target="_blank">GitHub</a>
-
-
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://blog.riley.gg">Blog</a>
-
-
           </li>
-
-
         </ul>
-
 
       </div>
     </div>
