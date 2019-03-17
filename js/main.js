@@ -70,7 +70,7 @@ sr.reveal('#about', {
 });
 sr.reveal('.container-skills', {
   origin: 'top',
-  distance: '500px',
+  distance: '200px',
   duration: 1000,
   viewFactor: 0.3
 });
