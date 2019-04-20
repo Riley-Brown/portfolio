@@ -1,12 +1,13 @@
 .about-me {
   text-align: center;
-  color: white;
 }
 .about-container {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  // padding: 0 20px;
+  .row {
+    justify-content: center;
+  }
   max-width: 100%;
   @media (max-width: 768px) {
     padding: 0 0px;
@@ -14,11 +15,12 @@
   }
 }
 #contact-me-h3 {
-  color: white;
+  // color: white;
 }
 #contact-me {
   padding: 50px 0;
   max-width: 100%;
+  // background: #fff;
   overflow-x: hidden;
   @media (max-width: 525px) {
     padding: 20px 0;
@@ -33,6 +35,8 @@
   text-align: justify;
   width: 95%;
   line-height: 1.7;
+  font-size: 1.1rem;
+  font-weight: 500;
   @media (max-width: 920px) {
     text-align: left;
   }
