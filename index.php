@@ -268,33 +268,56 @@
       <div class="row">
         <div class="col-md-6 col-lg-4">
           <span class="span-1 sr-interval">
-            <img data-src="img/learn-locker.jpg" class="lazyload" alt="Learn Locker">
+            <img data-src="img/learn-locker.jpg" 
+            data-title="Learn Locker" 
+            data-description="LearnLocker is a full-stack social network learning application, built with 4 other web developers. Built using React, Node.js and PostgreSQL." 
+            data-url="https://learnedadev.netlify.com/" 
+            data-repo="https://github.com/learneda" class="lazyload" alt="Learn Locker">
           </span>
         </div>
         <div class="col-md-6 col-lg-4">
           <span class="span-2 sr-interval">
-            <img data-src="img/insta-clone.png" class="lazyload" />
+            <img data-src="img/insta-clone.png" class="lazyload" 
+            data-title="Insta Clone React App" 
+            data-description="A dynamic Instagram clone using React" 
+            data-url="https://riley.gg/lambda/insta-clone" 
+            data-repo="https://github.com/Riley-Brown/React-Insta-Clone" />
           </span>
         </div>
         <div class="col-md-6 col-lg-4">
           <span class="span-3 sr-interval">
-            <img data-src="img/upwork-10-case-study.png" class="lazyload" alt="Video Mentum">
+            <img data-src="img/upwork-10-case-study.png" class="lazyload" alt="Upwork Freelance Work" 
+            data-title="UpWork Freelance Work" 
+            data-description="Website for a client featuring custom hover animations, and custom image carousel using HTML 5 data attributes. Design provided by client." 
+            data-url="https://riley.gg/upwork-10/case-study.html" 
+            data-repo="https://github.com/Riley-Brown/upwork-10">
           </span>
         </div>
         <div class="col-md-6 col-lg-4">
           <span class="span-4 sr-interval video">
-            <!-- <img data-src="img/wb-flashback.jpg" class="lazyload" alt="WB Flashback"> -->
-            <img data-src="img/wb-flashback.jpg" class="lazyload" />
+            <img data-src="img/wb-flashback.jpg" class="lazyload" 
+            data-title="WB Flashback"
+            data-description="Website built to showcase the changes in Brooklyn, New York, over many years. Includes amazing crossfade, and split image before and after effects. Built using CSS, and JavaScript."
+            data-url="https://riley.gg/upwork-3/"
+            data-repo="https://github.com/Riley-Brown/upwork-3" />
           </span>
         </div>
         <div class="col-md-6 col-lg-4">
           <span class="span-5 sr-interval video">
-            <img data-src="img/bayshells-landing.jpg" class="lazyload" alt="Bay Shells" />
+            <img data-src="img/bayshells-landing.jpg" class="lazyload" alt="Bay Shells" data-title="Bay Shells Landing Page"
+            data-description="Beautiful modern design provided by the client, includes dynamic clickable tabs, and slick carousel. Built using vanilla CSS and jQuery."
+            data-url="https://riley.gg/upwork-7/"
+            data-repo="https://github.com/Riley-Brown/bayshells-landing" />
           </span>
         </div>
         <div class="col-md-6 col-lg-4">
           <span class="span-6 sr-interval">
-            <img data-src="img/daniel-landing-page.jpg" class="lazyload" alt="Daniel Landing Page">
+            <img data-src="img/daniel-landing-page.jpg" class="lazyload" alt="Daniel Landing Page" 
+            data-title="Daniel D Website"
+            data-description="Personal website built for a client. The awesome design was provived by the client, I just put it all together. Built using Bootstrap."
+            data-url="https://riley.gg/upwork-4/"
+            data-repo="https://github.com/Riley-Brown/upwork-4"
+            >
           </span>
         </div>
       </div>
