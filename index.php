@@ -104,7 +104,7 @@
 
   <!--card grid start-->
   <div class="container pl-1 card-grid-wrap">
-    <div class="row mb-5 ">
+    <div class="row">
       <div class="col-sm-6 col-md-4">
         <div class="card text-center html-container">
           <div class="card-body ">
@@ -157,72 +157,9 @@
   </div>
   <!--card grid end-->
 
-  <!--forum and about me grid start-->
-
-  <div class="container-fluid bg-dark mt-5" id="contact-me">
-    <div class="about-container">
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="form-area">
-            <form role="form" method="POST" id="contactForm" action="contactform.php">
-              <br style="clear:both">
-              <h3 style="margin-bottom: 25px; text-align: center;" id="contact-me-h3">Contact Me</h3>
-              <div class="alert-form">Your message has been sent</div>
-              <div class="form-group">
-                <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
-              </div>
-
-
-              <div class="form-group">
-                <textarea class="form-control" type="textarea" id="message" name="message" placeholder="Message"
-                  maxlength="140" rows="7"></textarea>
-                <span class="help-block">
-
-                </span>
-              </div>
-
-              <button type="submit" id="submit" name="submit"
-                class="btn btn-lg btn-block  pull-right form-button mb-5">Submit
-                Form</button>
-            </form>
-          </div>
-
-
-        </div>
-        <div class="col-lg-6">
-          <div class=" about-me mt-4" id="about">
-            <h3>About Me</h3>
-            <p class="mt-3">I am a 22 year old Web Developer from Boston, Massachusetts. I have had an interest in
-              technology since a young
-              age, and decided to teach myself how to code. </p>
-
-            <p>I started with HTML on
-              <a href="https://www.codecademy.com/catalog/subject/web-development" target="_blank">CodeCademy</a>, then
-              CSS and JavaScript. I moved on to
-              <a href="http://referrals.trhou.se/rileybrown3" target="_blank">TeamTreeHouse's</a> 60 hour front-end
-              development course learning valuable skills such as Bootstrap, VueJS,
-              jQuery, AJAX and more. I learn new skills everyday from various platforms such as
-              <a href="https://udemy.com" target="_blank">Udemy.com</a>, YouTube, and more.
-              <a href="https://teamtreehouse.com/rileybrown3" target="_blank"> Click here to see my progress on
-                TreeHouse.</a>
-            </p>
-            <p class="mb-5"> I am currently attending
-              <a href="https://lambdaschool.com/" target="_blank">Lambda School's</a> 30 week coding Bootcamp for
-              full-stack Web Development. We will learn many new skills such
-              as full-stack JavaScript, Python, C, and Computer Science fundamentals.
-
-            </p>
-
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
+ 
+  <!-- <h1 class="my-work-title">My Work</h1>
+  <hr class="design-line"> -->
 
   <!-- lightbox wrapper -->
   <div class="modal-wrapper" id="myWork">
@@ -331,7 +268,7 @@
       <div class="row">
         <div class="col-md-6 col-lg-4">
           <span class="span-1">
-            <img data-src="img/daniel-landing-page.jpg" class="lazyload" alt="Daniel Landing Page">
+            <img data-src="img/learn-locker.jpg" class="lazyload" alt="Learn Locker">
           </span>
         </div>
         <div class="col-md-6 col-lg-4">
@@ -357,11 +294,74 @@
         </div>
         <div class="col-md-6 col-lg-4">
           <span class="span-6">
-            <img data-src="img/blargin-homes-landing.jpg" class="lazyload" alt="Blargin Homes">
+            <img data-src="img/daniel-landing-page.jpg" class="lazyload" alt="Daniel Landing Page">
           </span>
         </div>
       </div>
 
+    </div>
+  </div>
+
+   <!--forum and about me grid start-->
+   <div class="container-fluid mt-5" id="contact-me">
+    <div class="about-container">
+      <div class="row">
+        <div class="col-lg-5">
+          <div class="form-area">
+            <form role="form" method="POST" id="contactForm" action="contactform.php">
+              <br style="clear:both">
+              <h3 style="margin-bottom: 25px; text-align: center;" id="contact-me-h3">Contact Me</h3>
+              <div class="alert-form">Your message has been sent</div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+              </div>
+
+
+              <div class="form-group">
+                <textarea class="form-control" type="textarea" id="message" name="message" placeholder="Message"
+                  maxlength="140" rows="7"></textarea>
+                <span class="help-block">
+
+                </span>
+              </div>
+
+              <button type="submit" id="submit" name="submit"
+                class="btn btn-lg btn-block  pull-right form-button mb-5">Submit
+                Form</button>
+            </form>
+          </div>
+
+
+        </div>
+        <div class="col-lg-5">
+          <div class=" about-me mt-4" id="about">
+            <h3>About Me</h3>
+            <p class="mt-3">I am a 22 year old Web Developer from Boston, Massachusetts. I have had an interest in
+              technology since a young
+              age, and decided to teach myself how to code. </p>
+
+            <p>I started with HTML on
+              <a href="https://www.codecademy.com/catalog/subject/web-development" target="_blank">CodeCademy</a>, then
+              CSS and JavaScript. I moved on to
+              <a href="http://referrals.trhou.se/rileybrown3" target="_blank">TeamTreeHouse's</a> 60 hour front-end
+              development course learning valuable skills such as Bootstrap, VueJS,
+              jQuery, AJAX and more. I learn new skills everyday from various platforms such as
+              <a href="https://udemy.com" target="_blank">Udemy.com</a>, YouTube, and more.
+              <a href="https://teamtreehouse.com/rileybrown3" target="_blank"> Click here to see my progress on
+                TreeHouse.</a>
+            </p>
+            <p class="mb-5"> I am currently attending
+              <a href="https://lambdaschool.com/" target="_blank">Lambda School's</a> 30 week coding Bootcamp for
+              full-stack Web Development. We will learn many new skills such
+              as full-stack JavaScript, Python, C, and Computer Science fundamentals.
+            </p>
+
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -381,11 +381,8 @@
 
   <!-- treehouse API -->
   <div class="treehouse-info">
-    <h3 class="text-center  mt-5 treehouse-h3">My latest achievements on TreeHouse</h3>
-    <p class="text-center">
+    <h3 class="text-center mt-5 treehouse-h3">My latest achievements on TreeHouse</h3>
       <a href="https://teamtreehouse.com/rileybrown3" class="treehouse-link" target="_blank">See full profile</a>
-    </p>
-    <hr class="design-line">
   </div>
 
   <div class="container-fluid treehouse-wrapper">
