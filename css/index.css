@@ -144,6 +144,14 @@ header.fullscreen-landing {
   transition-duration: 300ms;
   text-decoration: none;
 }
+.card-grid-wrap .row {
+  margin-bottom: 70px;
+}
+@media (max-width: 768px) {
+  .card-grid-wrap .row {
+    margin-bottom: 30px;
+  }
+}
 .code-icon {
   display: block;
   font-size: 7rem;
@@ -189,7 +197,6 @@ header.fullscreen-landing {
 }
 .about-me {
   text-align: center;
-  color: white;
 }
 .about-container {
   max-width: 1600px;
@@ -197,14 +204,14 @@ header.fullscreen-landing {
   margin-right: auto;
   max-width: 100%;
 }
+.about-container .row {
+  justify-content: center;
+}
 @media (max-width: 768px) {
   .about-container {
     padding: 0 0px;
     width: 95%;
   }
-}
-#contact-me-h3 {
-  color: white;
 }
 #contact-me {
   padding: 50px 0;
@@ -224,6 +231,8 @@ header.fullscreen-landing {
   text-align: justify;
   width: 95%;
   line-height: 1.7;
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 @media (max-width: 920px) {
   #about p {
@@ -385,11 +394,21 @@ header.fullscreen-landing {
   font-weight: 700;
   color: #333;
   opacity: 0.8;
+  background: #333;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px auto;
+  display: block;
+  text-align: center;
+  width: 150px;
+  transition: 200ms ease-out;
 }
 .treehouse-link:hover {
   opacity: 1;
-  color: #333;
+  color: #fff;
   text-decoration: none;
+  transition: 200ms ease-in;
 }
 /* testimonial */
 .testimonial-wrapper {
