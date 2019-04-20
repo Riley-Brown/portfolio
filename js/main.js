@@ -3,86 +3,35 @@ window.sr = ScrollReveal({
   mobile: false
 });
 
-sr.reveal('.html-container', {
+sr.reveal('.sr-left', {
   origin: 'left',
   distance: '300px',
   duration: 1200,
   viewFactor: 0.1,
   delay: 200
 });
-
-sr.reveal('.css-container', {
-  origin: 'bottom',
-  distance: '200px',
-
-  duration: 1200,
-  viewFactor: 0.1,
-  delay: 400
-});
-
-sr.reveal('.javascript-container', {
+sr.reveal('.sr-right', {
   origin: 'right',
   distance: '300px',
-
   duration: 1200,
   viewFactor: 0.1,
   delay: 600
 });
-sr.reveal('.wordpress-container', {
-  origin: 'left',
-  distance: '300px',
-
-  duration: 1200,
-  viewFactor: 0.1,
-  delay: 800
-});
-sr.reveal('.bootstrap-container', {
+sr.reveal('.sr-bottom', {
   origin: 'bottom',
-  distance: '300px',
-
+  distance: '200px',
   duration: 1200,
   viewFactor: 0.1,
-  delay: 1000
+  delay: 400
 });
-sr.reveal('.jquery-container', {
-  origin: 'right',
-  distance: '300px',
-
-  duration: 1200,
-  viewFactor: 0.1,
-  delay: 1200
-});
-sr.reveal('.testimonial-wrapper', {
-  origin: 'left',
-  distance: '300px',
-  duration: 1200,
-  viewFactor: 0.1,
-  delay: 200
-});
-
-sr.reveal('#about', {
-  origin: 'right',
-  distance: '500px',
-  duration: 1000,
-  delay: 1000,
-  viewFactor: 0.3
-});
-sr.reveal('.container-skills', {
+sr.reveal('.sr-top', {
   origin: 'top',
   distance: '200px',
   duration: 1000,
   viewFactor: 0.3
 });
 
-sr.reveal('#contactForm', {
-  origin: 'left',
-  distance: '200px',
-  duration: 1000,
-  viewFactor: 0.3,
-  delay: 500
-});
-
-sr.reveal('.lightbox-container span', {
+sr.reveal('.sr-interval', {
   origin: 'left',
   distance: '200px',
   duration: 1000,
@@ -94,7 +43,7 @@ sr.reveal('.lightbox-container span', {
 // tree house api data
 
 function loadJSON() {
-  $.getJSON('https://teamtreehouse.com/rileybrown3.json', function (
+  $.getJSON('https://teamtreehouse.com/rileybrown3.json', function(
     data,
     status
   ) {
@@ -131,74 +80,8 @@ function loadJSON() {
 
 document.addEventListener('DOMContentLoaded', loadJSON);
 
-// tree house scroll reveal
-
-sr.reveal('.card-1', {
-  origin: 'left',
-  distance: '300px',
-
-  duration: 1200,
-  viewFactor: 0.2,
-  delay: 300
-});
-sr.reveal('.card-2', {
-  origin: 'bottom',
-  distance: '300px',
-
-  duration: 1200,
-  viewFactor: 0.2,
-  delay: 400
-});
-
-sr.reveal('.card-3', {
-  origin: 'right',
-  distance: '300px',
-
-  duration: 1200,
-  viewFactor: 0.2,
-  delay: 600
-});
-
-sr.reveal('.card-4', {
-  origin: 'right',
-  distance: '300px',
-
-  duration: 1200,
-  viewFactor: 0.2,
-  delay: 800
-});
-
-sr.reveal('.treehouse-info', {
-  origin: 'right',
-  distance: '300px',
-
-  duration: 1200,
-  viewFactor: 0.2,
-  delay: 200
-});
-
-// my work scroll reveal
-sr.reveal('.my-work-wrapper', {
-  origin: 'left',
-  distance: '300px',
-
-  duration: 1200,
-  viewFactor: 0.2,
-  delay: 200
-});
-
-// lazy load my work images
-// setTimeout(function() {
-//   $(document).ready(function() {
-//     $(".lazyload").each(function() {
-//       //* set the img src from data-src
-//       $(this).attr("src", $(this).attr("data-src"));
-//     });
-//   });
-// }, 2000);
-
 // script to close mobile menu after click
-$('.navbar-collapse a').click(function (e) {
+$('.navbar-collapse a').click(function(e) {
   if (
     $(e.target).is('a') &&
     window.innerWidth < 767 &&
@@ -211,7 +94,7 @@ $('.navbar-collapse a').click(function (e) {
 // custom image modal
 // modal one
 function modalClickOne() {
-  $('.lightbox-container .span-1').on('click', function (e) {
+  $('.lightbox-container .span-1').on('click', function(e) {
     e.stopPropagation();
     $('.image-modal').fadeIn();
     document.querySelector('.image-modal img').src = imgs[4];
@@ -236,7 +119,7 @@ modalClickOne();
 // modal 2
 
 function modalClickTwo() {
-  $('.lightbox-container .span-2').on('click', function (e) {
+  $('.lightbox-container .span-2').on('click', function(e) {
     e.stopPropagation();
 
     $('.image-modal').fadeIn();
@@ -263,7 +146,7 @@ modalClickTwo();
 
 // modal 3
 function modalClickThree() {
-  $('.lightbox-container .span-3').on('click', function (e) {
+  $('.lightbox-container .span-3').on('click', function(e) {
     e.stopPropagation();
 
     $('.image-modal').fadeIn();
@@ -289,7 +172,7 @@ modalClickThree();
 
 // modal 4
 function modalClickFour() {
-  $('.lightbox-container .span-4').on('click', function (e) {
+  $('.lightbox-container .span-4').on('click', function(e) {
     e.stopPropagation();
 
     $('.image-modal').fadeIn();
@@ -315,7 +198,7 @@ function modalClickFour() {
 modalClickFour();
 
 function modalClickFive() {
-  $('.lightbox-container .span-5').on('click', function (e) {
+  $('.lightbox-container .span-5').on('click', function(e) {
     e.stopPropagation();
     // fade modal in
     $('.image-modal').fadeIn();
@@ -343,7 +226,7 @@ function modalClickFive() {
 modalClickFive();
 
 function modalClickSix() {
-  $('.lightbox-container .span-6').on('click', function (e) {
+  $('.lightbox-container .span-6').on('click', function(e) {
     e.stopPropagation();
     $('.image-modal').fadeIn();
     document.querySelector('.image-modal img').src = imgs[5];
@@ -369,7 +252,7 @@ modalClickSix();
 
 // close modal
 function modalClose() {
-  $('.image-modal span').on('click', function () {
+  $('.image-modal span').on('click', function() {
     $('.image-modal').fadeOut();
   });
 }
@@ -377,11 +260,11 @@ function modalClose() {
 modalClose();
 
 function modalCloseTwo() {
-  $('.image-modal img').on('click', function () {
+  $('.image-modal img').on('click', function() {
     $('.image-modal').fadeOut();
   });
 
-  $('body').on('click', function (e) {
+  $('body').on('click', function(e) {
     $('.image-modal').fadeOut();
   });
 }
@@ -400,7 +283,7 @@ var imgs = [
 const reposDiv = document.querySelector('.github-repos');
 let repos;
 
-$.get('https://supersystem-mailchimp-api.herokuapp.com/github', function (data) {
+$.get('https://supersystem-mailchimp-api.herokuapp.com/github', function(data) {
   // console.log(JSON.parse(data))
   data = JSON.parse(data);
   repos = `
@@ -437,7 +320,7 @@ $.get('https://supersystem-mailchimp-api.herokuapp.com/github', function (data) 
   reposDiv.innerHTML = repos;
 });
 
-window.addEventListener('load', function () {
+window.addEventListener('load', function() {
   sr.reveal('.github-repos .card', {
     origin: 'left',
     distance: '200px',
@@ -472,12 +355,12 @@ window.addEventListener('load', function () {
 
 let lastHeight;
 
-window.addEventListener('load', function () {
+window.addEventListener('load', function() {
   let landingImg = document.querySelector('header.fullscreen-landing');
   landingImg.style.height = window.innerHeight + 'px';
   lastHeight = window.innerHeight;
 });
-window.addEventListener('resize', function () {
+window.addEventListener('resize', function() {
   if (
     window.innerWidth > window.innerHeight ||
     Math.abs(lastHeight - window.innerHeight) > 100
