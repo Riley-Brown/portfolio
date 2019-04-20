@@ -95,7 +95,7 @@
 
   <!--fullscreen background container end-->
 
-  <div class="container container-skills">
+  <div class="container container-skills sr-top">
     <h1 class="my-skills" id="skills">
       My Skills
       <hr class="design-line">
@@ -106,7 +106,7 @@
   <div class="container pl-1 card-grid-wrap">
     <div class="row">
       <div class="col-sm-6 col-md-4">
-        <div class="card text-center html-container">
+        <div class="card text-center html-container sr-left">
           <div class="card-body ">
             <h5 class="card-title">Node.js</h5>
             <img src="svg/nodejs.svg" alt="">
@@ -114,7 +114,7 @@
         </div>
       </div>
       <div class="col-sm-6 col-md-4">
-        <div class="card text-center css-container">
+        <div class="card text-center css-container sr-bottom">
           <div class="card-body">
             <h5 class="card-title ">React.js</h5>
             <img src="svg/react.svg">
@@ -122,7 +122,7 @@
         </div>
       </div>
       <div class="col-sm-6 col-md-4 ">
-        <div class="card text-center javascript-container">
+        <div class="card text-center javascript-container sr-right">
           <div class="card-body ">
             <h5 class="card-title">JavaScript</h5>
             <i class="fab fa-js code-icon javascript-icon"></i>
@@ -130,7 +130,7 @@
         </div>
       </div>
       <div class="col-sm-6 col-md-4">
-        <div class="card text-center wordpress-container">
+        <div class="card text-center wordpress-container sr-left">
           <div class="card-body ">
             <h5 class="card-title">SQL</h5>
             <img src="svg/database.svg">
@@ -138,7 +138,7 @@
         </div>
       </div>
       <div class="col-sm-6 col-md-4">
-        <div class="card text-center bootstrap-container">
+        <div class="card text-center bootstrap-container sr-bottom">
           <div class="card-body ">
             <h5 class="card-title">git</h5>
             <img src="svg/git.svg">
@@ -146,7 +146,7 @@
         </div>
       </div>
       <div class="col-sm-6 col-md-4">
-        <div class="card text-center jquery-container">
+        <div class="card text-center jquery-container sr-right">
           <div class="card-body ">
             <h5 class="card-title">CSS3</h5>
             <i class="fab fa-css3 code-icon css3-icon"></i>
@@ -164,7 +164,7 @@
   <!-- lightbox wrapper -->
   <div class="modal-wrapper" id="myWork">
     <!-- testimon carousel start  -->
-    <div class="testimonial-wrapper">
+    <div class="testimonial-wrapper sr-left">
       <div id="testimonial" class="carousel slide carousel-fade" data-ride="carousel">
         <!-- indicators -->
         <ol class="carousel-indicators">
@@ -267,33 +267,33 @@
     <div class="container lightbox-container">
       <div class="row">
         <div class="col-md-6 col-lg-4">
-          <span class="span-1">
+          <span class="span-1 sr-interval">
             <img data-src="img/learn-locker.jpg" class="lazyload" alt="Learn Locker">
           </span>
         </div>
         <div class="col-md-6 col-lg-4">
-          <span class="span-2 ">
+          <span class="span-2 sr-interval">
             <img data-src="img/insta-clone.png" class="lazyload" />
           </span>
         </div>
         <div class="col-md-6 col-lg-4">
-          <span class="span-3">
+          <span class="span-3 sr-interval">
             <img data-src="img/upwork-10-case-study.png" class="lazyload" alt="Video Mentum">
           </span>
         </div>
         <div class="col-md-6 col-lg-4">
-          <span class="span-4 video">
+          <span class="span-4 sr-interval video">
             <!-- <img data-src="img/wb-flashback.jpg" class="lazyload" alt="WB Flashback"> -->
             <img data-src="img/wb-flashback.jpg" class="lazyload" />
           </span>
         </div>
         <div class="col-md-6 col-lg-4">
-          <span class="span-5 video">
+          <span class="span-5 sr-interval video">
             <img data-src="img/bayshells-landing.jpg" class="lazyload" alt="Bay Shells" />
           </span>
         </div>
         <div class="col-md-6 col-lg-4">
-          <span class="span-6">
+          <span class="span-6 sr-interval">
             <img data-src="img/daniel-landing-page.jpg" class="lazyload" alt="Daniel Landing Page">
           </span>
         </div>
@@ -308,7 +308,7 @@
       <div class="row">
         <div class="col-lg-5">
           <div class="form-area">
-            <form role="form" method="POST" id="contactForm" action="contactform.php">
+            <form role="form" method="POST" class="sr-left" id="contactForm" action="contactform.php">
               <br style="clear:both">
               <h3 style="margin-bottom: 25px; text-align: center;" id="contact-me-h3">Contact Me</h3>
               <div class="alert-form">Your message has been sent</div>
@@ -337,7 +337,7 @@
 
         </div>
         <div class="col-lg-5">
-          <div class=" about-me mt-4" id="about">
+          <div class="about-me mt-4 sr-right" id="about">
             <h3>About Me</h3>
             <p class="mt-3">I am a 22 year old Web Developer from Boston, Massachusetts. I have had an interest in
               technology since a young
@@ -388,7 +388,7 @@
   <div class="container-fluid treehouse-wrapper">
     <div class="row treehouse-api-container">
       <div class="col-lg-3 col-md-6">
-        <div class="card treehouse-card card-1">
+        <div class="card treehouse-card card-1 sr-left">
           <img class="card-img-top treehouse-pic-1" src="svg/spinner.svg" alt="Card image cap">
           <div class="card-body">
             <h4 class="card-text text-center treehouse-1"></h4>
@@ -397,7 +397,7 @@
         </div>
       </div>
       <div class="col-lg-3 col-md-6">
-        <div class="card treehouse-card  card-2">
+        <div class="card treehouse-card  card-2 sr-bottom">
           <img class="card-img-top treehouse-pic-2 " src="svg/spinner.svg" alt="Card image cap">
           <div class="card-body">
             <h4 class="card-title treehouse-2 text-center"></h4>
@@ -406,7 +406,7 @@
         </div>
       </div>
       <div class="col-lg-3 col-md-6">
-        <div class="card treehouse-card  card-3">
+        <div class="card treehouse-card  card-3 sr-right">
           <img class="card-img-top treehouse-pic-3 " src="svg/spinner.svg" alt="Card image cap">
           <div class="card-body">
             <h4 class="card-title treehouse-3 text-center"></h4>
@@ -415,7 +415,7 @@
         </div>
       </div>
       <div class="col-lg-3 col-md-6">
-        <div class="card treehouse-card  card-4">
+        <div class="card treehouse-card  card-4 sr-right">
           <img class="card-img-top treehouse-pic-4 " src="svg/spinner.svg" alt="Card image cap">
           <div class="card-body">
             <h4 class="card-title treehouse-4 text-center"></h4>
