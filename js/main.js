@@ -92,192 +92,28 @@ $('.navbar-collapse a').click(function(e) {
 });
 
 // custom image modal
-// modal one
-function modalClickOne() {
-  $('.lightbox-container .span-1').on('click', function(e) {
+const lightboxImages = document.querySelectorAll(
+  '.lightbox-container span img'
+);
+const modalElement = element =>
+  document.querySelector(`.image-modal ${element}`);
+$('body').on('click', () => $('.image-modal').fadeOut());
+
+lightboxImages.forEach(img => {
+  const data = img.dataset;
+  img.addEventListener('click', e => {
     e.stopPropagation();
     $('.image-modal').fadeIn();
-    document.querySelector('.image-modal img').src = imgs[4];
-    // set description
-    document.querySelector('.image-modal h1').innerHTML = 'Daniel D Website';
-    document.querySelector('.image-modal p').innerHTML =
-      'Personal website built for a client. The awesome design was provived by the client, I just put it all together. Built using Bootstrap.';
-    // set link href
-    document
-      .querySelector('.image-modal a')
-      .setAttribute('href', 'https://riley.gg/upwork-4/');
-
-    // set github link
-    document
-      .querySelector('.code-link')
-      .setAttribute('href', 'https://github.com/Riley-Brown/upwork-4');
-
-    document.querySelector('.code-link').innerHTML = 'View Code';
+    modalElement('h1').innerHTML = data.title;
+    modalElement('p').innerHTML = data.description;
+    modalElement('a').href = data.url;
+    modalElement('.code-link').href = data.repo;
+    modalElement('img').src = img.src;
+    modalElement('img').addEventListener('click', () =>
+      $('.image-modal').fadeOut()
+    );
   });
-}
-modalClickOne();
-// modal 2
-
-function modalClickTwo() {
-  $('.lightbox-container .span-2').on('click', function(e) {
-    e.stopPropagation();
-
-    $('.image-modal').fadeIn();
-    document.querySelector('.image-modal img').src = imgs[1];
-    // set description
-    document.querySelector('.image-modal h1').innerHTML =
-      'Insta Clone React App';
-    document.querySelector('.image-modal p').innerHTML =
-      'A dynamic Instagram clone using React';
-    // set link href
-    document
-      .querySelector('.image-modal a')
-      .setAttribute('href', 'https://riley.gg/lambda/insta-clone');
-
-    document
-      .querySelector('.code-link')
-      .setAttribute('href', 'https://github.com/Riley-Brown/React-Insta-Clone');
-
-    document.querySelector('.code-link').innerHTML = 'View Code';
-  });
-}
-
-modalClickTwo();
-
-// modal 3
-function modalClickThree() {
-  $('.lightbox-container .span-3').on('click', function(e) {
-    e.stopPropagation();
-
-    $('.image-modal').fadeIn();
-    document.querySelector('.image-modal img').src = imgs[2];
-    // set description
-    document.querySelector('.image-modal h1').innerHTML =
-      'UpWork Freelance Work';
-    document.querySelector('.image-modal p').innerHTML =
-      'Website for a client featuring custom hover animations, and custom image carousel using HTML 5 data attributes. Design provided by client.';
-    // set link href
-    document
-      .querySelector('.image-modal a')
-      .setAttribute('href', 'https://riley.gg/upwork-10/case-study.html');
-    document
-      .querySelector('.code-link')
-      .setAttribute('href', 'https://github.com/Riley-Brown/upwork-10');
-
-    document.querySelector('.code-link').innerHTML = 'View Code';
-  });
-}
-
-modalClickThree();
-
-// modal 4
-function modalClickFour() {
-  $('.lightbox-container .span-4').on('click', function(e) {
-    e.stopPropagation();
-
-    $('.image-modal').fadeIn();
-    document.querySelector('.image-modal img').src = imgs[3];
-    // set description
-    document.querySelector('.image-modal h1').innerHTML = 'WB Flashback';
-    document.querySelector('.image-modal p').innerHTML =
-      'Website built to showcase the changes in Brooklyn, New York, over many years. Includes amazing crossfade, and split image before and after effects. Built using CSS, and JavaScript.';
-    // set link href
-    document
-      .querySelector('.image-modal a')
-      .setAttribute('href', 'https://riley.gg/upwork-3/');
-
-    // set github link
-    document
-      .querySelector('.code-link')
-      .setAttribute('href', 'https://github.com/Riley-Brown/upwork-3');
-
-    document.querySelector('.code-link').innerHTML = 'View Code';
-  });
-}
-
-modalClickFour();
-
-function modalClickFive() {
-  $('.lightbox-container .span-5').on('click', function(e) {
-    e.stopPropagation();
-    // fade modal in
-    $('.image-modal').fadeIn();
-    // set image src
-    document.querySelector('.image-modal img').src = imgs[0];
-    // set description
-    document.querySelector('.image-modal h1').innerHTML =
-      'Bay Shells Landing Page';
-    document.querySelector('.image-modal p').innerHTML =
-      'Beautiful modern design provided by the client, includes dynamic clickable tabs, and slick carousel. Built using vanilla CSS and jQuery.';
-    // set link href
-    document
-      .querySelector('.image-modal a')
-      .setAttribute('href', 'https://riley.gg/upwork-7/');
-
-    // set github link
-    document
-      .querySelector('.code-link')
-      .setAttribute('href', 'https://github.com/Riley-Brown/bayshells-landing');
-
-    document.querySelector('.code-link').innerHTML = 'View Code';
-  });
-}
-
-modalClickFive();
-
-function modalClickSix() {
-  $('.lightbox-container .span-6').on('click', function(e) {
-    e.stopPropagation();
-    $('.image-modal').fadeIn();
-    document.querySelector('.image-modal img').src = imgs[5];
-    // set description
-    document.querySelector('.image-modal h1').innerHTML = 'Blargin Homes';
-    document.querySelector('.image-modal p').innerHTML =
-      'Blargin Homes landing page. Built using PHP, a Bootstrap template, and heavily customized by myself';
-    // set link href
-    document
-      .querySelector('.image-modal a')
-      .setAttribute('href', 'https://riley.gg/upwork-2/');
-
-    // set github link
-    document
-      .querySelector('.code-link')
-      .setAttribute('href', ' https://github.com/Riley-Brown/blargin-homes');
-
-    document.querySelector('.code-link').innerHTML = 'View Code';
-  });
-}
-
-modalClickSix();
-
-// close modal
-function modalClose() {
-  $('.image-modal span').on('click', function() {
-    $('.image-modal').fadeOut();
-  });
-}
-
-modalClose();
-
-function modalCloseTwo() {
-  $('.image-modal img').on('click', function() {
-    $('.image-modal').fadeOut();
-  });
-
-  $('body').on('click', function(e) {
-    $('.image-modal').fadeOut();
-  });
-}
-modalCloseTwo();
-
-var imgs = [
-  'img/bayshells-landing.jpg',
-  'img/insta-clone.png',
-  'img/upwork-10-case-study.png',
-  'img/wb-flashback.jpg',
-  'img/daniel-landing-page.jpg',
-  'img/blargin-homes-landing.jpg'
-];
+});
 
 // github api repos
 const reposDiv = document.querySelector('.github-repos');
