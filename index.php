@@ -258,7 +258,7 @@
         <h1>This is my website</h1>
         <p>This is my great website that I build using cool things</p>
         <a href="#" target="_blank">Visit Site</a>
-        <a href="" class="code-link" target="_blank"></a>
+        <a href="" class="code-link" target="_blank">View Code</a>
       </div>
     </div>
     <!-- image modal end -->
