@@ -97,11 +97,16 @@ const lightboxImages = document.querySelectorAll(
 );
 const modalElement = element =>
   document.querySelector(`.image-modal ${element}`);
-$('body').on('click', () => $('.image-modal').fadeOut());
+
+$('body').on('click', () => {
+  $('.image-modal').fadeOut();
+  $('body').css('overflow-y', 'auto');
+});
 
 lightboxImages.forEach(img => {
   const data = img.dataset;
   img.addEventListener('click', e => {
+    $('body').css('overflow', 'hidden');
     e.stopPropagation();
     $('.image-modal').fadeIn();
     modalElement('h1').innerHTML = data.title;
