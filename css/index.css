@@ -548,6 +548,7 @@ video {
   display: none;
   color: white;
   text-align: center;
+  overflow: auto;
 }
 .image-modal a {
   color: #34b3a0;
