@@ -83,8 +83,7 @@
   <header class="fullscreen-landing">
     <div class="landing-content">
       <h1>Welcome to my Portfolio</h1>
-      <p> I am studying Web Development and Software Engineering with the goal of becoming a full-stack engineer.
-      </p>
+      <p>I am a Full-Stack Web Developer with a passion for learning new technologies. I am experienced with modern tech such as React and Nodejs.</p>
       <a class="header-btn" id="see-more" href="#main-content">See more</a>
     </div>
   </header>
