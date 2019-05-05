@@ -131,15 +131,15 @@ $.get('https://supersystem-mailchimp-api.herokuapp.com/github', function(data) {
  ${data
    .map(
      repo => `
- 
-  <div class="col-sm-6"> 
+
+  <div class="col-sm-6">
     <a href=${repo.html_url} class="card" target="_blank">
     <h2> ${repo.name} </h2>
     ${
       repo.description
         ? `<p>${repo.description}</p>`
         : `<p>No description provided for this repo.</p>`
-    } 
+    }
             <span class="badge badge-info"> Stars: ${
               repo.stargazers_count
             } </span>
@@ -151,47 +151,46 @@ $.get('https://supersystem-mailchimp-api.herokuapp.com/github', function(data) {
             } </span>
     </a>
   </div>
- 
- 
+
  `
    )
    .join('')}
- 
+
   `;
+
   reposDiv.innerHTML = repos;
 });
 
-window.addEventListener('load', function() {
-  sr.reveal('.github-repos .card', {
-    origin: 'left',
-    distance: '200px',
-    duration: 1000,
-    viewFactor: 0.3,
-    delay: 200,
-    interval: 200
-  });
-  sr.reveal('.landing-content h1', {
-    origin: 'top',
-    distance: '200px',
-    duration: 1000,
-    viewFactor: 0.3,
-    delay: 500
-  });
+sr.reveal('.github-repos .card', {
+  origin: 'left',
+  distance: '200px',
+  duration: 1000,
+  viewFactor: 0.3,
+  delay: 200,
+  interval: 200
+});
 
-  sr.reveal('.landing-content p', {
-    origin: 'bottom',
-    distance: '200px',
-    duration: 1000,
-    viewFactor: 0.3,
-    delay: 1500
-  });
-  sr.reveal('.landing-content a', {
-    origin: 'left',
-    distance: '2000px',
-    duration: 1000,
-    viewFactor: 0.3,
-    delay: 2000
-  });
+sr.reveal('.landing-content h1', {
+  origin: 'top',
+  distance: '200px',
+  duration: 1000,
+  viewFactor: 0.3,
+  delay: 500
+});
+
+sr.reveal('.landing-content p', {
+  origin: 'bottom',
+  distance: '200px',
+  duration: 1000,
+  viewFactor: 0.3,
+  delay: 1500
+});
+sr.reveal('.landing-content a', {
+  origin: 'left',
+  distance: '2000px',
+  duration: 1000,
+  viewFactor: 0.3,
+  delay: 2000
 });
 
 let lastHeight;
