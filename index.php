@@ -37,6 +37,7 @@
 </head>
 
 <body>
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 
   <div class="fullscreen-spinner">
     <img src="spinner.svg" alt="spinner logo">
@@ -54,7 +55,6 @@
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active"></li>
         </ul>
-
         <ul class="nav navbar-nav navbar-right pr-5">
           <li class="nav-item">
             <a class="nav-link" id="about-me" href="#about">About</a>
@@ -74,7 +74,6 @@
             <a class="nav-link" href="https://blog.riley.gg" target="_blank">Blog</a>
           </li>
         </ul>
-
       </div>
     </div>
   </nav>
@@ -233,7 +232,6 @@
               Riley is great to work with. Prompt and easy to communicate with.
             </p>
           </div>
-
         </div>
         <a class="carousel-control-prev" href="#testimonial" role="button" data-slide="prev">
           <i class="fa fa-chevron-left testi-img" aria-hidden="true"></i>
@@ -241,7 +239,6 @@
         </a>
         <a class="carousel-control-next" href="#testimonial" role="button" data-slide="next">
           <i class="fa fa-chevron-right testi-img" aria-hidden="true"></i>
-
           <span class="sr-only">Next</span>
         </a>
       </div>
@@ -250,7 +247,6 @@
 
     <!--  image modal  -->
     <div class="image-modal">
-
       <div class="image-modal-content-wrapper">
         <span>&times;</span>
         <img src="" class="img-fluid" alt="">
@@ -315,12 +311,11 @@
             data-title="Daniel D Website"
             data-description="Personal website built for a client. The awesome design was provived by the client, I just put it all together. Built using Bootstrap."
             data-url="https://riley.gg/upwork-4/"
-            data-repo="https://github.com/Riley-Brown/upwork-4"
-            >
+            data-repo="https://github.com/Riley-Brown/upwork-4" 
+            />
           </span>
         </div>
       </div>
-
     </div>
   </div>
 
@@ -340,31 +335,24 @@
               <div class="form-group">
                 <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
               </div>
-
-
               <div class="form-group">
-                <textarea class="form-control" type="textarea" id="message" name="message" placeholder="Message"
-                  maxlength="140" rows="7"></textarea>
+                <textarea class="form-control" type="textarea" id="message" name="message" placeholder="Message" maxlength="140"
+                  rows="7"></textarea>
                 <span class="help-block">
-
                 </span>
               </div>
-
-              <button type="submit" id="submit" name="submit"
-                class="btn btn-lg btn-block  pull-right form-button mb-5">Submit
+              <button type="submit" id="submit" name="submit" class="btn btn-lg btn-block  pull-right form-button mb-5">Submit
                 Form</button>
             </form>
           </div>
-
-
         </div>
+
         <div class="col-lg-5">
           <div class="about-me mt-4 sr-right" id="about">
             <h3>About Me</h3>
             <p class="mt-3">I am a 22 year old Web Developer from Boston, Massachusetts. I have had an interest in
               technology since a young
               age, and decided to teach myself how to code. </p>
-
             <p>I started with HTML on
               <a href="https://www.codecademy.com/catalog/subject/web-development" target="_blank">CodeCademy</a>, then
               CSS and JavaScript. I moved on to
@@ -380,7 +368,6 @@
               full-stack Web Development. We will learn many new skills such
               as full-stack JavaScript, Python, C, and Computer Science fundamentals.
             </p>
-
           </div>
         </div>
       </div>
@@ -395,11 +382,10 @@
     <hr class="design-line">
     <div class="container">
       <div class="row github-repos">
-
+        
       </div>
     </div>
-  </div>
-
+    </div>
 
   <!-- treehouse API -->
   <div class="treehouse-info">
@@ -419,8 +405,8 @@
         </div>
       </div>
       <div class="col-lg-3 col-md-6">
-        <div class="card treehouse-card  card-2 sr-bottom">
-          <img class="card-img-top treehouse-pic-2 " src="svg/spinner.svg" alt="Card image cap">
+        <div class="card treehouse-card card-2 sr-bottom">
+          <img class="card-img-top treehouse-pic-2" src="svg/spinner.svg" alt="Card image cap">
           <div class="card-body">
             <h4 class="card-title treehouse-2 text-center"></h4>
             <p class="treehouse-p-2 text-center"></p>
@@ -428,8 +414,8 @@
         </div>
       </div>
       <div class="col-lg-3 col-md-6">
-        <div class="card treehouse-card  card-3 sr-right">
-          <img class="card-img-top treehouse-pic-3 " src="svg/spinner.svg" alt="Card image cap">
+        <div class="card treehouse-card card-3 sr-right">
+          <img class="card-img-top treehouse-pic-3" src="svg/spinner.svg" alt="Card image cap">
           <div class="card-body">
             <h4 class="card-title treehouse-3 text-center"></h4>
             <p class="treehouse-p-3 text-center"></p>
@@ -438,7 +424,7 @@
       </div>
       <div class="col-lg-3 col-md-6">
         <div class="card treehouse-card  card-4 sr-right">
-          <img class="card-img-top treehouse-pic-4 " src="svg/spinner.svg" alt="Card image cap">
+          <img class="card-img-top treehouse-pic-4" src="svg/spinner.svg" alt="Card image cap">
           <div class="card-body">
             <h4 class="card-title treehouse-4 text-center"></h4>
             <p class="treehouse-p-4 text-center"></p>
@@ -449,9 +435,8 @@
   </div>
 
   <div class="footer-copyright text-center footer">
-
     Coded by
-    <a href="https://twitter.com/rileyB_96" target="_blank"> Riley Brown</a> © 2018
+    <a href="https://twitter.com/rileyB_96" target="_blank">Riley Brown</a> © 2019
   </div>
 
 
@@ -461,7 +446,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js"
     integrity="sha384-lZmvU/TzxoIQIOD9yQDEpvxp6wEU32Fy0ckUgOH4EIlMOCdR823rg4+3gWRwnX1M" crossorigin="anonymous">
   </script>
-  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   <script src="js/ls.bgset.min.js"></script>
   <script src="js/lazysizes.min.js"></script>
   <script src="js/smoothScroll.js"></script>
@@ -472,6 +456,7 @@
     $('.fullscreen-spinner').fadeOut();
 
   });
+
   </script>
 </body>
 
