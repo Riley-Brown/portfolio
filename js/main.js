@@ -232,3 +232,16 @@ window.addEventListener('resize', function() {
     lastHeight = window.innerHeight;
   }
 });
+
+if (window.innerWidth < 500 || window.innerHeight < 820) {
+  let prevScrollPos = window.pageYOffset;
+  window.onscroll = function() {
+    let currentScrollPos = window.pageYOffset;
+    if (prevScrollPos > currentScrollPos) {
+      $('nav').fadeIn();
+    } else {
+      $('nav').fadeOut();
+    }
+    prevScrollPos = currentScrollPos;
+  };
+}
