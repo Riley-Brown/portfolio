@@ -91,6 +91,28 @@ $('.navbar-collapse a').click(function(e) {
   }
 });
 
+// pause carousel on initial load
+window.addEventListener('load', function() {
+  $('.carousel').carousel('pause');
+});
+
+const testimonial = document.querySelector('.testimonial-wrapper');
+
+// pauses carousel when more than 200px out of viewport
+window.addEventListener('scroll', () => {
+  console.log(testimonial.getBoundingClientRect());
+  if (
+    testimonial.getBoundingClientRect().top >= 200 ||
+    testimonial.getBoundingClientRect().top <= -200
+  ) {
+    $('#testimonial').carousel('pause');
+  } else {
+    $('#testimonial').carousel({
+      pause: false
+    });
+  }
+});
+
 // custom image modal
 const lightboxImages = document.querySelectorAll(
   '.lightbox-container span img'
