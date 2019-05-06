@@ -248,7 +248,7 @@ header.fullscreen-landing {
 }
 @media (max-width: 550px) {
   #about p {
-    line-height: 2;
+    line-height: 1.9;
   }
 }
 #about a {
