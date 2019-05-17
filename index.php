@@ -7,6 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Riley Brown Web Developer</title>
 
+  <!-- google domain verification -->
+  <meta name="google-site-verification" content="clWfsTJbEx9Gt5Fakyh0y29q86It6DBUlMhlZZR8C-M" />
+
   <!-- Google / Search Engine Tags -->
   <meta itemprop="name" content="Riley Brown Web Developer">
   <meta itemprop="description"
