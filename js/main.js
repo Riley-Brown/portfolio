@@ -100,7 +100,6 @@ const testimonial = document.querySelector('.testimonial-wrapper');
 
 // pauses carousel when more than 200px out of viewport
 window.addEventListener('scroll', () => {
-  console.log(testimonial.getBoundingClientRect());
   if (
     testimonial.getBoundingClientRect().top >= 200 ||
     testimonial.getBoundingClientRect().top <= -200
@@ -222,6 +221,7 @@ window.addEventListener('load', function() {
   landingImg.style.height = window.innerHeight + 'px';
   lastHeight = window.innerHeight;
 });
+
 window.addEventListener('resize', function() {
   if (
     window.innerWidth > window.innerHeight ||
@@ -235,13 +235,14 @@ window.addEventListener('resize', function() {
 
 if (window.innerWidth < 500 || window.innerHeight < 820) {
   let prevScrollPos = window.pageYOffset;
-  window.onscroll = function() {
+  window.addEventListener('scroll', function() {
     let currentScrollPos = window.pageYOffset;
+    console.log(currentScrollPos, prevScrollPos);
     if (prevScrollPos > currentScrollPos) {
       $('nav').fadeIn();
     } else {
       $('nav').fadeOut();
     }
     prevScrollPos = currentScrollPos;
-  };
+  });
 }
