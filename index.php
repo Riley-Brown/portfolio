@@ -84,9 +84,15 @@
 
   <header class="fullscreen-landing">
     <div class="landing-content">
-      <h1>Welcome to my Portfolio</h1>
-      <p>I am a Full-Stack Web Developer with a passion for learning new technologies. I am experienced with modern tech such as React and Nodejs.</p>
-      <a class="header-btn" id="see-more" href="#main-content">See more</a>
+      <div class="carousel-wrapper">
+        <img src="img/browser.png" alt="carousel frame" id="carousel-frame">
+        <img src="img/learn-locker.jpg" alt="" id="landing-carousel">
+      </div>
+      <div class="landing-info">
+        <h1>Welcome to my Portfolio</h1>
+        <p>I am a Full-Stack Web Developer with a passion for learning new technologies. I am experienced with modern tech such as React and Nodejs.</p>
+        <a class="header-btn" id="see-more" href="#main-content">See more</a>
+      </div>
     </div>
   </header>
 
