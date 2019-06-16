@@ -207,11 +207,9 @@ sr.reveal('.landing-content p', {
   delay: 1500
 });
 sr.reveal('.landing-content a', {
-  origin: 'left',
-  distance: '2000px',
   duration: 1000,
   viewFactor: 0.3,
-  delay: 2000
+  delay: 2200
 });
 
 let lastHeight;
@@ -246,3 +244,26 @@ if (window.innerWidth < 500 || window.innerHeight < 820) {
     prevScrollPos = currentScrollPos;
   });
 }
+
+const landingCarousel = () => {
+  let imgs = [
+    'img/learn-locker.jpg',
+    'img/bayshells-landing.jpg',
+    'img/upwork-10-case-study.png'
+  ];
+  let index = 1;
+  const interval = setInterval(carouselCycle, 2000);
+  const carousel = document.querySelector('#landing-carousel');
+  carousel.src = imgs[0];
+  function carouselCycle() {
+    if (index >= imgs.length) {
+      index = 0;
+    }
+
+    carousel.src = imgs[index];
+
+    index = index + 1;
+  }
+};
+
+landingCarousel();
