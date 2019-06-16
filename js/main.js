@@ -40,6 +40,10 @@ sr.reveal('.sr-interval', {
   interval: 200
 });
 
+sr.reveal('.sr-fade', {
+  duration: 2000
+});
+
 // tree house api data
 
 function loadJSON() {
@@ -182,42 +186,15 @@ $.get('https://supersystem-mailchimp-api.herokuapp.com/github', function(data) {
   reposDiv.innerHTML = repos;
 });
 
-sr.reveal('.github-repos .card', {
-  origin: 'left',
-  distance: '200px',
-  duration: 1000,
-  viewFactor: 0.3,
-  delay: 200,
-  interval: 200
-});
-
-sr.reveal('.landing-content h1', {
-  origin: 'top',
-  distance: '200px',
-  duration: 1000,
-  viewFactor: 0.3,
-  delay: 500
-});
-
-sr.reveal('.landing-content p', {
-  origin: 'bottom',
-  distance: '200px',
-  duration: 1000,
-  viewFactor: 0.3,
-  delay: 1500
-});
-sr.reveal('.landing-content a', {
-  duration: 1000,
-  viewFactor: 0.3,
-  delay: 2200
-});
-
 let lastHeight;
 
 window.addEventListener('load', function() {
   let landingImg = document.querySelector('header.fullscreen-landing');
   landingImg.style.height = window.innerHeight + 'px';
   lastHeight = window.innerHeight;
+  sr.reveal('.landing-content', {
+    duration: 2000
+  });
 });
 
 window.addEventListener('resize', function() {
@@ -246,6 +223,7 @@ if (window.innerWidth < 500 || window.innerHeight < 820) {
 }
 
 // landing page carousel
+
 const landingCarousel = () => {
   const carouselItems = document.querySelector('.carousel-items');
   // move current image to back of arr after animation
@@ -258,3 +236,21 @@ const landingCarousel = () => {
 };
 
 window.addEventListener('DOMContentLoaded', landingCarousel);
+
+// pause animation out of view port
+let first = document
+  .querySelector('.carousel-items')
+  .getElementsByTagName('img')[0];
+
+document.getElementById('see-more').addEventListener('click', () => {
+  first.style.animationName = 'none';
+});
+
+window.addEventListener('scroll', () => {
+  const top = first.getBoundingClientRect().top;
+  if (top >= 0 && top <= window.innerHeight) {
+    first.style.animationName = 'fade';
+  } else {
+    first.style.animationName = 'none';
+  }
+});
