@@ -224,33 +224,35 @@ if (window.innerWidth < 500 || window.innerHeight < 820) {
 
 // landing page carousel
 
-const landingCarousel = () => {
-  const carouselItems = document.querySelector('.carousel-items');
-  // move current image to back of arr after animation
-  const fadeComplete = () => carouselItems.appendChild(arr[0]);
-  const arr = carouselItems.getElementsByTagName('img');
-  for (let i = 0; i < arr.length; i++) {
-    console.log(arr[i]);
-    arr[i].addEventListener('animationend', fadeComplete, false);
-  }
-};
+if (window.innerWidth > 650) {
+  const landingCarousel = () => {
+    const carouselItems = document.querySelector('.carousel-items');
+    // move current image to back of arr after animation
+    const fadeComplete = () => carouselItems.appendChild(arr[0]);
+    const arr = carouselItems.getElementsByTagName('img');
+    for (let i = 0; i < arr.length; i++) {
+      console.log(arr[i]);
+      arr[i].addEventListener('animationend', fadeComplete, false);
+    }
+  };
 
-window.addEventListener('DOMContentLoaded', landingCarousel);
+  window.addEventListener('DOMContentLoaded', landingCarousel);
 
-// pause animation out of view port
-let first = document
-  .querySelector('.carousel-items')
-  .getElementsByTagName('img')[0];
+  // pause animation out of view port
+  let first = document
+    .querySelector('.carousel-items')
+    .getElementsByTagName('img')[0];
 
-document.getElementById('see-more').addEventListener('click', () => {
-  first.style.animationName = 'none';
-});
-
-window.addEventListener('scroll', () => {
-  const top = first.getBoundingClientRect().top;
-  if (top >= 0 && top <= window.innerHeight) {
-    first.style.animationName = 'fade';
-  } else {
+  document.getElementById('see-more').addEventListener('click', () => {
     first.style.animationName = 'none';
-  }
-});
+  });
+
+  window.addEventListener('scroll', () => {
+    const top = first.getBoundingClientRect().top;
+    if (top >= 0 && top <= window.innerHeight) {
+      first.style.animationName = 'fade';
+    } else {
+      first.style.animationName = 'none';
+    }
+  });
+}
