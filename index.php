@@ -89,7 +89,7 @@
         <div class="carousel-items">
           <img src="img/bayshells-landing.jpg" alt="">
           <img src="img/learn-locker.jpg" alt="">
-          <img src="img/upwork-10-case-study.png" alt="">
+          <img src="img/upwork-10-case-study.jpg" alt="">
         </div>
       </div>
       <div class="landing-info">
@@ -294,7 +294,7 @@
         </div>
         <div class="col-md-6 col-lg-4">
           <span class="span-3 sr-interval">
-            <img data-src="img/upwork-10-case-study.png" class="lazyload" alt="Upwork Freelance Work" 
+            <img data-src="img/upwork-10-case-study.jpg" class="lazyload" alt="Upwork Freelance Work" 
             data-title="UpWork Freelance Work" 
             data-description="Website for a client featuring custom hover animations, and custom image carousel using HTML 5 data attributes. Design provided by client." 
             data-url="https://riley.gg/upwork-10/case-study.html" 
