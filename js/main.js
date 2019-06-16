@@ -245,25 +245,16 @@ if (window.innerWidth < 500 || window.innerHeight < 820) {
   });
 }
 
+// landing page carousel
 const landingCarousel = () => {
-  let imgs = [
-    'img/learn-locker.jpg',
-    'img/bayshells-landing.jpg',
-    'img/upwork-10-case-study.png'
-  ];
-  let index = 1;
-  const interval = setInterval(carouselCycle, 2000);
-  const carousel = document.querySelector('#landing-carousel');
-  carousel.src = imgs[0];
-  function carouselCycle() {
-    if (index >= imgs.length) {
-      index = 0;
-    }
-
-    carousel.src = imgs[index];
-
-    index = index + 1;
+  const carouselItems = document.querySelector('.carousel-items');
+  // move current image to back of arr after animation
+  const fadeComplete = () => carouselItems.appendChild(arr[0]);
+  const arr = carouselItems.getElementsByTagName('img');
+  for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+    arr[i].addEventListener('animationend', fadeComplete, false);
   }
 };
 
-landingCarousel();
+window.addEventListener('DOMContentLoaded', landingCarousel);
