@@ -96,16 +96,31 @@ header.fullscreen-landing {
   width: 90%;
   align-items: center;
 }
+@media (max-width: 992px) {
+  .landing-content {
+    flex-direction: column-reverse;
+  }
+}
 .landing-content h1 {
   font-size: 40px;
   margin-bottom: 3px;
   text-align: center;
   font-weight: bold;
 }
+@media (max-width: 1200px) {
+  .landing-content h1 {
+    font-size: 33px;
+  }
+}
 @media (max-width: 600px) {
   .landing-content h1 {
     font-size: 2rem;
     margin-top: 20px;
+  }
+}
+@media (max-width: 450px) {
+  .landing-content h1 {
+    font-size: 1.5rem;
   }
 }
 .landing-content p {
@@ -123,13 +138,12 @@ header.fullscreen-landing {
     font-size: 1.1rem;
     display: block;
     padding-bottom: 0.5rem;
-    color: white;
     width: 100%;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 450px) {
   .landing-content p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 5px;
     word-spacing: 2px;
   }
@@ -140,11 +154,30 @@ header.fullscreen-landing {
   height: 395px;
   width: 50%;
 }
+@media (max-width: 1200px) {
+  .landing-content .carousel-wrapper {
+    height: 350px;
+  }
+}
+@media (max-width: 992px) {
+  .landing-content .carousel-wrapper {
+    width: 80%;
+    margin-top: 40px;
+    height: 250px;
+    width: 500px;
+  }
+}
+@media (max-width: 650px) {
+  .landing-content .carousel-wrapper {
+    display: none;
+  }
+}
 .landing-content .carousel-wrapper #carousel-frame {
   margin-bottom: -3px;
 }
 .landing-content .carousel-wrapper img {
   width: 100%;
+  object-fit: cover;
 }
 .landing-content .carousel-wrapper .carousel-items img {
   height: 330px;
@@ -152,6 +185,12 @@ header.fullscreen-landing {
   position: absolute;
   left: 0;
   right: 0;
+}
+@media (max-width: 992px) {
+  .landing-content .carousel-wrapper .carousel-items img {
+    height: 250px;
+    width: 500px;
+  }
 }
 .landing-content .carousel-wrapper .carousel-items img:nth-of-type(1) {
   z-index: 20;
@@ -177,6 +216,16 @@ header.fullscreen-landing {
 .landing-content .landing-info {
   width: 45%;
 }
+@media (max-width: 992px) {
+  .landing-content .landing-info {
+    width: 80%;
+  }
+}
+@media (max-width: 650px) {
+  .landing-content .landing-info {
+    width: 100%;
+  }
+}
 .header-btn {
   background: #34b3a0;
   color: #fff;
@@ -192,7 +241,7 @@ header.fullscreen-landing {
 }
 @media (max-width: 500px) {
   .header-btn {
-    display: inline-block;
+    width: 180px;
     font-size: 1rem;
     padding-top: 0.6rem;
     padding-left: 3rem;
