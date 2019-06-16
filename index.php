@@ -85,8 +85,12 @@
   <header class="fullscreen-landing">
     <div class="landing-content">
       <div class="carousel-wrapper">
-        <img src="img/browser.png" alt="carousel frame" id="carousel-frame">
-        <img src="img/learn-locker.jpg" alt="" id="landing-carousel">
+        <img src="img/browser.png" alt="carousel frame">
+        <div class="carousel-items">
+          <img src="img/bayshells-landing.jpg" alt="">
+          <img src="img/learn-locker.jpg" alt="">
+          <img src="img/upwork-10-case-study.png" alt="">
+        </div>
       </div>
       <div class="landing-info">
         <h1>Welcome to my Portfolio</h1>
